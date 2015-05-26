@@ -1,7 +1,7 @@
 'use strict';
 
 var CONFIGURATOR = {
-    'releaseDate': 1432132561465, // new Date().getTime() - Wed May 20 2015 15:35:37 GMT+0100 (BST)
+    'releaseDate': 1432389468227, // new Date().getTime() - Sat May 23 2015 14:57:54 GMT+0100 (BST)
     
      // all versions are specified and compared using semantic versioning http://semver.org/
     'apiVersionAccepted': '1.2.0',
@@ -75,7 +75,8 @@ var RC_tuning = {
     dynamic_THR_PID: 0,
     throttle_MID:    0,
     throttle_EXPO:   0,
-    dynamic_THR_breakpoint: 0
+    dynamic_THR_breakpoint: 0,
+    RC_YAW_EXPO:         0
 };
 
 var AUX_CONFIG = [];
@@ -142,6 +143,17 @@ var ARMING_CONFIG = {
 
 var FC_CONFIG = {
     loopTime: 0
+};
+
+var FAILSAFE_CONFIG = {
+    delay:                  0,
+    off_delay:              0,
+    failsafe_throttle:      0      
+};
+
+var FAILSAFE_RX_CONFIG = {    
+    min_usec:               0,
+    max_usec:               0        
 };
 
 var MISC = {
